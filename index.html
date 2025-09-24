@@ -132,28 +132,43 @@ nav button:hover {
     }
 
     @media (max-width: 768px) {
-      aside {
-        width: 70px;
-        padding: 20px 10px;
-      }
+  aside {
+    width: 120px; /* Sidebar breiter machen */
+    padding: 20px 10px;
+  }
 
-      .logo {
-        display: none;
-      }
+  .guave {
+    width: 60px;
+    height: 60px;
+  }
 
-      nav button {
-        font-size: 0.8rem;
-        padding: 8px;
-      }
+  nav button {
+    font-size: 0.85rem;
+    padding: 10px;
+    white-space: normal; /* Text umbrechen, falls nötig */
+  }
 
-      main {
-        padding: 20px;
-      }
+  main {
+    margin-left: 120px; /* Abstand zum Inhalt anpassen */
+    padding: 20px;
+  }
+}
 
-      #main-content {
-        padding: 20px;
-      }
-    }
+/* Kleine Smartphones */
+@media (max-width: 480px) {
+  aside {
+    width: 100px; /* noch kompakter, aber ausreichend */
+  }
+
+  nav button {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+
+  main {
+    margin-left: 100px;
+  }
+}
   </style>
 </head>
 <body>
